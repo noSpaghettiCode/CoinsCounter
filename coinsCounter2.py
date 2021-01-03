@@ -1,7 +1,7 @@
 from cv2 import cv2
 import numpy as np
 
-img = cv2.imread('C:\\Emil\\Proiecte\\Python\\Proiecte_Python\\Automation\\MoneyCounter\\Samples\\34.jpg')
+img = cv2.imread('Path to your image')
 
 radius = []
 coins = []
@@ -26,8 +26,7 @@ imgBlur = cv2.medianBlur(imgGray, 7)
 
 detectCircles(imgBlur, img)
 
-cv2.imwrite("C:\\Emil\\Proiecte\\Python\\Proiecte_Python\\Automation\\MoneyCounter\\Samples" + '30' + ".jpg", imgBlur)
-cv2.imwrite("C:\\Emil\\Proiecte\\Python\\Proiecte_Python\\Automation\\MoneyCounter\\Samples" + '31' + ".jpg", img)
+cv2.imwrite('Desired path to your image', img)
 
 radius.sort()
 minim = radius[0][0]
